@@ -35,7 +35,8 @@ It is written in SQL language and is constructed this way:
 * " 1=1 " is an always true condition
 + " -- " introduces comments
 
-![alt text](images/admin input.png)
+![alt text]([images/admin input.png](https://github.com/AndreaDiBenedett0/report-cyber/blob/main/images/admin%20input.png))
+https://github.com/AndreaDiBenedett0/report-cyber/blob/main/images/admin%20input.png
 
 This causes the application to perform a query of this type:
 
