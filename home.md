@@ -1,3 +1,4 @@
+## Di Benedetto Andrea 
 # Cybersecurity Report
 
 ## Table of Contents
@@ -7,7 +8,7 @@
 
 ## Introduction <a id="introduction"></a>
 
-This report is about the exploitation of some vulnerabilities of the [OWASP Juice Shop web application](https://owasp.org/www-project-juice-shop/).
+This report is about the exploitation of some vulnerabilities of the vulnerable [OWASP Juice Shop web application](https://owasp.org/www-project-juice-shop/).
 
 I chose some of the proposed [Challenges](https://pwning.owasp-juice.shop/companion-guide/latest/appendix/solutions.html) and combined them in order to perform an attack that aims to delete and forge users’ feedbacks. In particular these are the challenges that I looked at: 
 * [[ 1 ]](#1) [Log in with the administrator’s user account](https://pwning.owasp-juice.shop/companion-guide/latest/appendix/solutions.html#_log_in_with_the_administrators_user_account), 
