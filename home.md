@@ -12,7 +12,7 @@ This report is about the exploitation of some vulnerabilities of the vulnerable 
 
 I chose some of the proposed [Challenges](https://pwning.owasp-juice.shop/companion-guide/latest/appendix/solutions.html) and combined them in order to perform an attack that aims to delete and forge users’ feedbacks. In particular these are the challenges that I looked at: 
 * [[ 1 ]](#1) [Log in with the administrator’s user account](https://pwning.owasp-juice.shop/companion-guide/latest/appendix/solutions.html#_log_in_with_the_administrators_user_account), 
-* [ 2 ]<a id="2"></a> [Access the administration section of the store](https://pwning.owasp-juice.shop/companion-guide/latest/appendix/solutions.html#_access_the_administration_section_of_the_store), 
+* [[ 2 ]](#2) [Access the administration section of the store](https://pwning.owasp-juice.shop/companion-guide/latest/appendix/solutions.html#_access_the_administration_section_of_the_store), 
 * [[ 3 ]](#3) [Get rid of all 5-star customer feedback](https://pwning.owasp-juice.shop/companion-guide/latest/appendix/solutions.html#_get_rid_of_all_5_star_customer_feedback), 
 * [[ 4 ]](#4) [Post some feedback in another user’s name](https://pwning.owasp-juice.shop/companion-guide/latest/appendix/solutions.html#_post_some_feedback_in_another_users_name).
 
@@ -63,7 +63,7 @@ That is always verified, thus obtaining from the server an authentication token 
 
 ----
 
-### [[ 2 ]](#2) Access the administration section of the store
+### [ 2 ]<a id="2"></a> Access the administration section of the store
 
 By using the developer tools' inspection functionality (F12) to inspect the code of the web app I repeatedly found the "ng" prefix, which means that the web app has been developed with [Angular](https://angular.dev/ ). 
 
