@@ -1,4 +1,4 @@
-## Di Benedetto Andrea 
+### Di Benedetto Andrea - Cybersecurity Course 2024 - UNITS
 # Cybersecurity Report
 
 ## Table of Contents
@@ -67,11 +67,11 @@ That is always verified, thus obtaining from the server an authentication token 
 
 By using the developer tools' inspection functionality (F12) to inspect the code of the web app I repeatedly found the "ng" prefix, which means that the web app has been developed with [Angular](https://angular.dev/ ). 
 
-![alt text](ng.png)
+![alt text](images/ng.png)
 
 In the [Angular Documentation](https://angular.dev/guide/routing/router-reference#configuration), it is said that "each Route maps a URL **path** to a component". Using the Debugger tool, I searched in the "main.js" JavaScript the **path** related to the administration page component. 
 
-![alt text](<path admin.png>)
+![alt text](images/path%20admin.png)
 
 I tried to access the admin section by modifying the URL specifying the name of the found path `https:// ... /administration` but, without the login, I wasn't authorized to see the section. So I logged in as admin ( [[ 1 ]](#1) ) and it worked.
 
@@ -89,11 +89,11 @@ I tried to access the admin section by modifying the URL specifying the name of 
 
 This part was very easy because in the admin section ( that I accessed in [[ 2 ]](#2) ), there was a "Customer Feedback" section with all the feedbacks and the possibility of delete them.
 
-![alt text](admin_page.png)
+![alt text](images/admin_page.png)
 
 In the administration section there is also a list of all the registered users. By intercepting the traffic related to the access to the admin section, I noticed a request-response exchange named `/rest/user/authentication-details/`. The response contained a JSON file with a lot of information about every single user that was listed, in particular the id is useful in the following steps.
 
-![alt text](<users info.png>)
+![alt text](images/users%20info.png)
 
 ----
 #### References and useful links of [ 3 ] 
@@ -111,15 +111,15 @@ As a first step I used the feedback functionality as it is intended to understan
 
 The submission was successful and by looking at the POST response I noticed that there is an interesting entry in the data section named `UserId`. In this case its value was `Null` because I didn't log in (author was "anonymous"), but we found in [[ 3 ]](#3) that each user has a related id that we can exploit here for impersonation.
 
-![alt text](<user id 1.png>)
+![alt text](images/user%20id%201.png)
 
 So I used the repeater functionality of Burp to send a new request where I added a `"UserId: "` entry filled with the id of the user I was going to impersonate and I modified the rating and comment as I wanted. 
 
-![alt text](<user id 2.png>)
+![alt text](images/user%20id%202.png)
 
 The response was successful so I checked the feedback list in the administration section and my forged feedback was there.
 
-![alt text](results.png)
+![alt text](images/results.png)
 
 ----
 #### References and useful links of [ 4 ] 
