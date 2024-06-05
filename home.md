@@ -6,7 +6,7 @@
   * [Implementation](#implementation)
   * [Conclusion](#conclusion)
 
-## Introduction <a id="introduction"></a>
+## Introduction 
 
 This report is about the exploitation of some vulnerabilities of the vulnerable [OWASP Juice Shop web application](https://owasp.org/www-project-juice-shop/).
 
@@ -18,7 +18,7 @@ I chose some of the proposed [Challenges](https://pwning.owasp-juice.shop/compan
 
 
 ## Implementation <a id="implementation"></a>
-### [ 1 ]<a id="1"></a> Log in with the administrator’s user account
+### [ 1 ] Log in with the administrator’s user account
 
 As a first step, I tried to access the web app through the login form using "admin" both as email and password in order to try to guess a possible default combination and generate some traffic. The application provided an invalid credential message.
 
