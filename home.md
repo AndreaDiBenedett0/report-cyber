@@ -18,7 +18,7 @@ I chose some of the proposed [Challenges](https://pwning.owasp-juice.shop/compan
 
 
 ## Implementation 
-### Ch1 <a id="ch1"></a> Log in with the administrator’s user account
+### Ch1 Log in with the administrator’s user account
 
 As a first step, I tried to access the web app through the login form using "admin" both as email and password in order to try to guess a possible default combination and generate some traffic. The application provided an invalid credential message.
 
